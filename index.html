@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikacja PESEL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header><h1>Sprawdź poprawność numeru PESEL</h1><details>Za pomocą tej aplikacji sprawdzisz czy numer PESEL jest prawidłowy. <br>
+        Pamiętaj, że numer PESEL składa się z 11 cyfr, inne znaki nie występują!
+        </details><hr></header>
+        <main>
+            <div id="result"> <span id="span_pesel"></span><!-- PESEL: <span id="number">89042701113</span> jest poprawny --> </div>
+            <div id="div_input">
+            <label for="pesel" alt="Podaj nr PESEL, który chcesz sprawdzić">Wpisz nr PESEL:</label>
+            <input type="text" name="pesel" id="pesel" placeholder="PESEL">
+            <button id="send"><img src="img/check-mark.png" alt="klik"> Sprawdź</button>
+            </div>
+        </main>
+        <footer><p>2022 Wszelkie prawa zastrzeżone &copy created by Tomasz Vorek</p></footer>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>

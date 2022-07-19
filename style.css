@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(img/foxtail.png);
+
+}
+#container {
+    max-width: 800px;
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    place-items: center;
+    justify-content: center;
+    place-content: center;
+    margin: 60px auto;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 5px 9px;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: #fcf7ff;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+header hr {
+    border: 1px solid #9999aa;
+
+}
+details {
+    line-height: 1.5rem;
+}
+#result {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.success {
+    background-color: rgb(53, 245, 0);
+    color: white;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    
+}
+
+.fail {
+    background-color: rgb(243, 67, 30);
+    color: white;
+    font-size: 1.5rem;
+    border: 2px solid black;
+}
+
+
+#div_input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    padding: 10px;
+    text-align: center;
+    row-gap: 20px;
+    place-content: center;
+    place-items: center;
+    justify-content: center;
+
+}
+#div_input input {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#div_input input:focus,
+#div_input input:hover{
+    border: 2px solid green;
+    outline: none;
+    initial-value: '';
+}
+#div_input button {
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: bold;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+button img {
+    width: 25px;
+}
+#div_input button:hover {
+    cursor: pointer;
+    border: 2px solid green;
+    outline: none;
+    background-color: white;
+    font-weight: bold;
+}
+
+footer {
+    padding: 10px;
+    background-color: #fcf7ff;
+    width: 100%;
+    text-align: center;
+    border: transparent;
+    border-radius: 0 0 10px 10px;
+}
